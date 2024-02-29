@@ -32,6 +32,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/zelara-plantvision:${{ steps.tag_name.outputs.TAG_NAME }}
-          build-args: |
-            VERSION=${{ steps.tag_name.outputs.TAG_NAME }}
+          tags: ghcr.io/${{ github.repository_owner }}/zelara-plantvision/hello-world:${{ steps.tag_name.outputs.TAG_NAME }}
